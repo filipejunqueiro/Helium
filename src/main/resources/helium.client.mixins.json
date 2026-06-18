@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "pt.filipejunqueiro.client.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"mixins": [
+		"InitMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

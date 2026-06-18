@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "helium",
+	"version": "${version}",
+	"name": "Helium",
+	"description": "That performance mod that rules them all",
+	"authors": ["filipejunqueiro"],
+	"contact": {
+		"homepage": "https://filipejunqueiro.pt/",
+		"sources": "https://github.com/filipejunqueiro/helium"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/helium/icon.png",
+	"environment": "*",
+	"mixins": [
+		{
+			"config": "helium.server.mixins.json",
+			"environment": "server"
+		},
+		{
+			"config": "helium.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
